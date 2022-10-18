@@ -1,10 +1,11 @@
-import { View, Text } from 'react-native'
+import { View, Text, SafeAreaView } from 'react-native'
+import HeaderTabs from '../components/headertabs/HeaderTabs'
 
 const Home = () => {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <SafeAreaView>
+      <HeaderTabs />
+    </SafeAreaView>
   )
 }
 
