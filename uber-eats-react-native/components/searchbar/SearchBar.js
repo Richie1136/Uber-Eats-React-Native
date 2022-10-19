@@ -1,9 +1,10 @@
 import { View, Text } from 'react-native'
+import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
 
 const SearchBar = () => {
   return (
-    <View>
-      <Text>SearchBar</Text>
+    <View style={{ marginTop: 15, flexDirection: 'row' }}>
+      <GooglePlacesAutocomplete placeholder='Search' />
     </View>
   )
 }
