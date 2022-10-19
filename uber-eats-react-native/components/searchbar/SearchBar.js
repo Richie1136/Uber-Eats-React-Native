@@ -1,6 +1,7 @@
 import { View, Text } from 'react-native'
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
 import Ionicons from 'react-native-vector-icons/Ionicons'
+import AntDesign from 'react-native-vector-icons/AntDesign'
 
 const SearchBar = () => {
   return (
@@ -21,7 +22,13 @@ const SearchBar = () => {
         },
       }}
         renderLeftButton={() => <View>
-          <Ionicons name="location" size={24} />
+          <Ionicons style={{ marginLeft: 10 }} name="location" size={24} />
+        </View>}
+        renderRightButton={() => <View style={{ marginRight: 10, alignItems: 'center', flexDirection: 'row', backgroundColor: 'white', padding: 9, borderRadius: 30, }}>
+          <AntDesign name="clockcircle" size={11} style={{ marginRight: 6 }} />
+          <Text>
+            Search
+          </Text>
         </View>}
       />
     </View>
