@@ -9,8 +9,8 @@ const Home = () => {
       <View style={{ backgroundColor: 'white', padding: 15 }}>
         <HeaderTabs />
         <SearchBar />
-        <Categories />
       </View>
+      <Categories />
     </SafeAreaView>
   )
 }
