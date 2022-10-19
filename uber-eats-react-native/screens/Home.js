@@ -1,4 +1,5 @@
 import { View, Text, SafeAreaView } from 'react-native'
+import Categories from '../components/categories/Categories'
 import HeaderTabs from '../components/headertabs/HeaderTabs'
 import SearchBar from '../components/searchbar/SearchBar'
 
@@ -8,6 +9,7 @@ const Home = () => {
       <View style={{ backgroundColor: 'white', padding: 15 }}>
         <HeaderTabs />
         <SearchBar />
+        <Categories />
       </View>
     </SafeAreaView>
   )
